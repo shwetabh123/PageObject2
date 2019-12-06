@@ -365,7 +365,7 @@ ppassword.sendKeys(pw);
 		Xls_Reader	reader=new Xls_Reader(path);
 		
 
-//String qaaction=dataprovider.getXLValue(“Individual”,”QAAction”,rowNUm);
+       //String qaaction=dataprovider.getXLValue(“Individual”,"QAAction”,rowNUm);
 
 
 		   String FirstName=reader.getCellData("Sheet1", "FirstName", rowNum);
