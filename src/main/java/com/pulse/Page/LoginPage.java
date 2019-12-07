@@ -41,7 +41,7 @@ public class LoginPage extends BasePage {
 	
 	Properties prop=null;
 	
-	public static Xls_Reader reader=new Xls_Reader("D:\\eclipse-workspace\\PageObject2\\dataa\\data.xlsx") ;
+	public static Xls_Reader reader=new Xls_Reader("D:\\eclipse-workspace\\PageObject2\\data\\data.xlsx") ;
 	
 	public   int itrs;
 

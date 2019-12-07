@@ -368,7 +368,7 @@ public class ValidLogin1 extends BaseTest {
 	  childTestnew.get().log(Status.INFO, "Running "+method.getName());
 	  
 	  String actualTitle = driver.getTitle();
-	  String expectedTitle = "Au Register Forms by Colorlib";
+	  String expectedTitle = "Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment";
 	  
 	  
 	  assertEquals(actualTitle,expectedTitle);

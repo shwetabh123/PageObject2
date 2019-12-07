@@ -197,7 +197,7 @@ public class BasePage
 			
 			
 	    	
-	    	InputStream stream = new FileInputStream(new File("C:\\Users\\Admin\\eclipse-workspace\\PageObject1\\src\\main\\java\\main\\java\\objects\\object.properties"));
+	    	InputStream stream = new FileInputStream(new File("D:\\eclipse-workspace\\PageObject2\\src\\main\\java\\objects\\object.properties"));
 	      
 	    //	InputStream stream = new FileInputStream(new File(FilePath));
 		        
