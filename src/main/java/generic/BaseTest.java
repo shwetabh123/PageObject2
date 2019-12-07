@@ -294,7 +294,7 @@ Logger APP_LOGS = Logger.getLogger("BaseTest");
         	String browserType = eLib.getCellValue(path,"PreCon", 1, 1);
 	
 
-    	return new RemoteWebDriver(new URL("http://192.168.2.5:4444/wd/hub"), getBrowserCapabilities(browser));
+    	return new RemoteWebDriver(new URL("http://192.168.225.33:4444/wd/hub"), getBrowserCapabilities(browser));
       
        
         	//	return new RemoteWebDriver(new URL("http://172.23.128.1:4444/wd/hub"), getBrowserCapabilities(browser));

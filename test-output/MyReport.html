@@ -4,18 +4,17 @@
 <html>
 
 <head>
-	<meta charset='utf-8' /> 
+	<meta charset='UTF-8' /> 
 	<meta name='description' content='' />
 	<meta name='robots' content='noodp, noydir' />
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/9fa70d0ed9c34a8ed445ceee3494d3d7de7f8918/dist/css/extent.css' type='text/css' rel='stylesheet' />
-	
-	<title>ExtentReports</title>
+	<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/master/dist/css/extent.css' type='text/css' rel='stylesheet' />
 
+	<title>ExtentReports</title>
+	
 </head>
 	<body class='extent dark default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
@@ -24,7 +23,7 @@
 
 <nav>
 	<div class="nav-wrapper">
-		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+		<a href="http://extentreports.relevantcodes.com" class="brand-logo blue darken-3">Extent</a>
 
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
@@ -41,11 +40,11 @@
 
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
-			<a href='#!'>
-				<span class='label suite-start-time'>Dec 5, 2019 10:52:43 AM</span>
+			<a>
+				<span class='suite-start-time'>7 Dec, 2019 5:56:02 AM</span>
 			</a>
-			<a href='#!'>
-				<span class='label'>v3.0.3</span>
+			<a>
+				<span>v3.0.0</span>
 			</a>
 		</ul>
 	</div>
@@ -63,8 +62,11 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
+					<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -72,6 +74,15 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+						<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -144,37 +155,36 @@
 	<div class='subview-left left'>
 		
 		<div class='view-summary'>
-			<h5>Tests</h3>
+			<h5>Tests</h5>
+
 			<ul id='test-collection' class='test-collection'>
 				
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>TestChrome</span>
-						<span class='test-time'>Dec 5, 2019 10:52:43 AM</span>
+						<span class='test-time'>7 Dec, 2019 5:56:03 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 5, 2019 10:52:43 AM</span>
-	<span class='label end-time'>Dec 5, 2019 10:55:14 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 2m 30s+832ms</span>
+	<span class='label start-time'>7 Dec, 2019 5:56:03 AM</span>
+	<span class='label end-time'>7 Dec, 2019 5:58:47 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 44s+72ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1  fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>ValidLogin1</div>						
-						<span class='node-time'>Dec 5, 2019 10:52:43 AM</span>
-						<span class='node-duration'>0h 2m 30s+823ms</span>
+						<span class='node-time'>7 Dec, 2019 5:56:03 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf fail' status='fail' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>TC2</div>						
-						<span class='node-time'>Dec 5, 2019 10:52:43 AM</span>
-						<span class='node-duration'>0h 0m 23s+594ms</span>
+						<span class='node-time'>7 Dec, 2019 5:56:03 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
@@ -190,43 +200,40 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:07 AM</td>
+													<td class='timestamp'>5:56:34 AM</td>
 													<td class='step-details'>Running TC2</td>
 												</tr>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>10:53:07 AM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: expected [Au Register Forms by Colorlib] but found [Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
+													<td class='timestamp'>5:56:34 AM</td>
+													<td class='step-details'>java.lang.AssertionError: expected [Au Register Forms by Colorlib] but found [Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
 	at com.pulse.Test.ValidLogin1.TC2(ValidLogin1.java:374)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></td>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)</td>
 												</tr>
 										</tbody>
 									</table>
@@ -236,8 +243,7 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>TC1</div>						
-						<span class='node-time'>Dec 5, 2019 10:53:07 AM</span>
-						<span class='node-duration'>0h 0m 24s+912ms</span>
+						<span class='node-time'>7 Dec, 2019 5:56:34 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -253,27 +259,27 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:17 AM</td>
+													<td class='timestamp'>5:56:44 AM</td>
 													<td class='step-details'>Logged   into      https://colorlib.com/etc/regform/colorlib-regform-4/</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:31 AM</td>
+													<td class='timestamp'>5:57:01 AM</td>
 													<td class='step-details'>data entered is SHWETABH</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:31 AM</td>
+													<td class='timestamp'>5:57:01 AM</td>
 													<td class='step-details'>data entered is SRIVASTAVA</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:31 AM</td>
+													<td class='timestamp'>5:57:01 AM</td>
 													<td class='step-details'>data entered is shwetabh.srivastava@gmail.com</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:53:32 AM</td>
+													<td class='timestamp'>5:57:02 AM</td>
 													<td class='step-details'>Test Passed</td>
 												</tr>
 										</tbody>
@@ -284,8 +290,7 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>TC1</div>						
-						<span class='node-time'>Dec 5, 2019 10:53:32 AM</span>
-						<span class='node-duration'>0h 0m 25s+244ms</span>
+						<span class='node-time'>7 Dec, 2019 5:57:02 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -301,27 +306,27 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:42 AM</td>
+													<td class='timestamp'>5:57:11 AM</td>
 													<td class='step-details'>Logged   into      https://colorlib.com/etc/regform/colorlib-regform-4/</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:57 AM</td>
+													<td class='timestamp'>5:57:27 AM</td>
 													<td class='step-details'>data entered is CHARU</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:57 AM</td>
+													<td class='timestamp'>5:57:27 AM</td>
 													<td class='step-details'>data entered is SRIVASTAVA</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:53:57 AM</td>
+													<td class='timestamp'>5:57:27 AM</td>
 													<td class='step-details'>data entered is charu.srivastava@gmail.com</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:53:58 AM</td>
+													<td class='timestamp'>5:57:28 AM</td>
 													<td class='step-details'>Test Passed</td>
 												</tr>
 										</tbody>
@@ -332,8 +337,7 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>TC1</div>						
-						<span class='node-time'>Dec 5, 2019 10:53:58 AM</span>
-						<span class='node-duration'>0h 0m 26s+39ms</span>
+						<span class='node-time'>7 Dec, 2019 5:57:28 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -349,27 +353,27 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:07 AM</td>
+													<td class='timestamp'>5:57:37 AM</td>
 													<td class='step-details'>Logged   into      https://colorlib.com/etc/regform/colorlib-regform-4/</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:23 AM</td>
+													<td class='timestamp'>5:57:54 AM</td>
 													<td class='step-details'>data entered is ROHIT</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:23 AM</td>
+													<td class='timestamp'>5:57:54 AM</td>
 													<td class='step-details'>data entered is SRIVASTAVA</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:23 AM</td>
+													<td class='timestamp'>5:57:54 AM</td>
 													<td class='step-details'>data entered is rohit.srivastava@gmail.com</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:54:24 AM</td>
+													<td class='timestamp'>5:57:55 AM</td>
 													<td class='step-details'>Test Passed</td>
 												</tr>
 										</tbody>
@@ -380,8 +384,7 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>TC1</div>						
-						<span class='node-time'>Dec 5, 2019 10:54:24 AM</span>
-						<span class='node-duration'>0h 0m 24s+658ms</span>
+						<span class='node-time'>7 Dec, 2019 5:57:55 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -397,27 +400,27 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:33 AM</td>
+													<td class='timestamp'>5:58:04 AM</td>
 													<td class='step-details'>Logged   into      https://colorlib.com/etc/regform/colorlib-regform-4/</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:47 AM</td>
+													<td class='timestamp'>5:58:20 AM</td>
 													<td class='step-details'>data entered is KARAN</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:47 AM</td>
+													<td class='timestamp'>5:58:20 AM</td>
 													<td class='step-details'>data entered is SRIVASTAVA</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:47 AM</td>
+													<td class='timestamp'>5:58:20 AM</td>
 													<td class='step-details'>data entered is karan.srivastava@gmail.com</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:54:48 AM</td>
+													<td class='timestamp'>5:58:21 AM</td>
 													<td class='step-details'>Test Passed</td>
 												</tr>
 										</tbody>
@@ -428,8 +431,7 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>TC1</div>						
-						<span class='node-time'>Dec 5, 2019 10:54:48 AM</span>
-						<span class='node-duration'>0h 0m 25s+682ms</span>
+						<span class='node-time'>7 Dec, 2019 5:58:21 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -445,27 +447,27 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:54:58 AM</td>
+													<td class='timestamp'>5:58:30 AM</td>
 													<td class='step-details'>Logged   into      https://colorlib.com/etc/regform/colorlib-regform-4/</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:55:13 AM</td>
+													<td class='timestamp'>5:58:46 AM</td>
 													<td class='step-details'>data entered is BRIJESH</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:55:13 AM</td>
+													<td class='timestamp'>5:58:46 AM</td>
 													<td class='step-details'>data entered is SRIVASTAVA</td>
 												</tr>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>10:55:13 AM</td>
+													<td class='timestamp'>5:58:46 AM</td>
 													<td class='step-details'>data entered is shwetabh.srivastava@gmail.com</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>10:55:14 AM</td>
+													<td class='timestamp'>5:58:47 AM</td>
 													<td class='step-details'>Test Passed</td>
 												</tr>
 										</tbody>
@@ -524,7 +526,7 @@
 	<div class='subview-left left'>
 		
 		<div class='view-summary'>
-			<h5>Exceptions</h3>
+			<h5>Exceptions</h5>
 			<ul id='exception-collection' class='exception-collection'>
 				
 				<li class='exception displayed active'>
@@ -544,39 +546,37 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 5, 2019 10:52:43 AM</td>
+										<td>7 Dec, 2019 5:56:03 AM</td>
 										<td class='linked' test-id='2'>TestChrome.ValidLogin1</td>
-										<td><pre><pre>java.lang.AssertionError: expected [Au Register Forms by Colorlib] but found [Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
+										<td><pre>java.lang.AssertionError: expected [Au Register Forms by Colorlib] but found [Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
 	at com.pulse.Test.ValidLogin1.TC2(ValidLogin1.java:374)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></pre></td>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></td>
 									</tr>
 								</tbody>
 							</table>
@@ -613,23 +613,23 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 5, 2019 10:52:43 AM</div>
+					<div class='panel-lead'>7 Dec, 2019 5:56:02 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 5, 2019 10:55:14 AM</div>
+			 		<div class='panel-lead'>7 Dec, 2019 5:58:47 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>151,053ms</div>
+					<div class='panel-lead'>164,192ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
-				<div class='card-panel environment'>
+				<div class='card-panel'>
 					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
 					
 					<table>
@@ -637,10 +637,26 @@
 							<th>Name</th>
 							<th>Value</th>
 						</tr>
-							<tr>
-								<td>Platform</td>
-								<td>Windows</td>
-							</tr>
+						<tr>
+							<td>User Name</td>
+							<td>shwetabh</td>
+						</tr>
+						<tr>
+							<td>OS</td>
+							<td>Windows 10</td>
+						</tr>
+						<tr>
+							<td>Java Version</td>
+							<td>1.8.0_231</td>
+						</tr>
+						<tr>
+							<td>Host Name</td>
+							<td>LAPTOP-76PGCCB3</td>
+						</tr>
+						<tr>
+							<td>Platform</td>
+							<td>Windows</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -659,7 +675,7 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				unknownParent: 0,
 				
 				passChild: 5,
 				failChild: 1,
@@ -667,8 +683,8 @@
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
+				unknownChild: 0,
 				infoChild: 21,
-				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
@@ -676,12 +692,12 @@
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
-				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				unknownGrandChild: 0,
+				infoGrandChild: 0
 			};
 		</script>
-		
-			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/9fa70d0ed9c34a8ed445ceee3494d3d7de7f8918/dist/js/extent.js' type='text/javascript'></script>
+
+		<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/master/dist/js/extent.js' type='text/javascript'></script>
 		
 		
 	</body>
