@@ -11,11 +11,11 @@
   <url>http://maven.apache.org</url>
 
  
-<!--  <properties>
+ <properties>
    
-        <suiteFile>TestChrome.xml</suiteFile>
+        <suiteFile>testng.xml</suiteFile>
     </properties>
- -->
+
  
 
 
